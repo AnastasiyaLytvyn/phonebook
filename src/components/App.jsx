@@ -24,11 +24,13 @@ export function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Layout />}></Route>
-      <Route index element={<Home />}></Route>
-      <Route path="/register" element={<Register />}></Route>
-      <Route path="/login" element={<Login />}></Route>
-      <Route path="/contacts" element={<Contacts />}></Route>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />}></Route>
+        <Route path="/register" element={<Register />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/contacts" element={<Contacts />}></Route>
+      </Route>
+
       {/* <Container>
       <TitlePhone>Phonebook</TitlePhone>
       <ContactForm />
