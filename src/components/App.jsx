@@ -14,6 +14,7 @@ import { Register } from 'pages/Register';
 import { Login } from 'pages/Login';
 import { Contacts } from 'pages/Contacts';
 import { PrivateRoute } from './PrivateRoute';
+import { PublicRoute } from './PublicRoute';
 
 export function App() {
   // const dispatch = useDispatch();
@@ -27,8 +28,18 @@ export function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />}></Route>
-        <Route path="/register" element={<Register />}></Route>
-        <Route path="/login" element={<Login />}></Route>
+        <Route
+          path="/register"
+          element={
+            <PublicRoute redirectTo="/contacts" component={<Register />} />
+          }
+        ></Route>
+        <Route
+          path="/login"
+          element={
+            <PublicRoute redirectTo="/contacts" component={<Login />} />
+          }
+        ></Route>
         <Route
           path="/contacts"
           element={
