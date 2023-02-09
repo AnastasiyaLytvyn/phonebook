@@ -13,6 +13,7 @@ import { Home } from 'pages/Home';
 import { Register } from 'pages/Register';
 import { Login } from 'pages/Login';
 import { Contacts } from 'pages/Contacts';
+import { PrivateRoute } from './PrivateRoute';
 
 export function App() {
   // const dispatch = useDispatch();
@@ -28,7 +29,12 @@ export function App() {
         <Route index element={<Home />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/login" element={<Login />}></Route>
-        <Route path="/contacts" element={<Contacts />}></Route>
+        <Route
+          path="/contacts"
+          element={
+            <PrivateRoute redirectTo="/login" component={<Contacts />} />
+          }
+        ></Route>
       </Route>
 
       {/* <Container>
