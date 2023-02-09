@@ -17,12 +17,7 @@ import { PrivateRoute } from './PrivateRoute';
 import { PublicRoute } from './PublicRoute';
 
 export function App() {
-  // const dispatch = useDispatch();
-  // // const isLoading = useSelector(selectIsLoading);
-
-  // useEffect(() => {
-  //   dispatch(fetchContacts());
-  // }, [dispatch]);
+  
 
   return (
     <Routes>
