@@ -5,10 +5,16 @@ export const Label = styled.label`
   flex-direction: column;
   gap: 5px;
   margin-bottom: 12px;
+  color: #fffaf0;
+  font-size: 14px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 export const Input = styled.input`
-  width: 340px;
+  width: 300px;
   padding: 5px;
   border: 1px solid lightgrey;
   border-radius: 4px;
@@ -20,5 +26,8 @@ export const Input = styled.input`
     outline: none;
     border: 1px solid lightslategrey;
     transition: all 0.5s ease-out;
+  }
+  @media screen and (min-width: 768px) {
+    width: 410px;
   }
 `;

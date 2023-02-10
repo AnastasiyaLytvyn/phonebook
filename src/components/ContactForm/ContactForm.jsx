@@ -22,13 +22,13 @@ export const ContactForm = () => {
     if (contacts.find(contact => contact.name === name)) {
       toast.error(`${name} is already in contacts`, {
         style: {
-          border: '1px solid #c33838',
-          color: '#c33838',
+          color: '#FFFAEE',
+          background: '#8B0000',
           width: '275px',
           fontSize: '14px',
         },
         iconTheme: {
-          primary: '#c33838',
+          primary: '#8B0000',
           secondary: '#FFFAEE',
         },
         duration: 3000,

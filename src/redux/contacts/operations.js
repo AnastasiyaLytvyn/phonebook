@@ -24,8 +24,8 @@ export const addContact = createAsyncThunk(
 
       toast.success(`Contact ${response.data.name} added`, {
         style: {
-          border: '1px solid #20aa25',
-          color: '#20aa25',
+          color: '#FFFAEE',
+          background: '#20aa25',
           width: '275px',
           fontSize: '14px',
         },
@@ -50,13 +50,13 @@ export const deleteContact = createAsyncThunk(
 
       toast.success(`Contact ${response.data.name} deleted`, {
         style: {
-          border: '1px solid #2011a1',
-          color: '#2011a1',
+          color: '#FFFAEE',
+          background: '#9400D3',
           width: '275px',
           fontSize: '14px',
         },
         iconTheme: {
-          primary: '#2011a1',
+          primary: '#9400D3',
           secondary: '#FFFAEE',
         },
         duration: 2000,

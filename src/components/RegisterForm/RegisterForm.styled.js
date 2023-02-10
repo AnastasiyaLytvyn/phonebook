@@ -2,10 +2,21 @@ import styled from 'styled-components';
 
 export const Form = styled.form`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 10px;
+  margin: 32px auto;
+  width: 320px;
+  padding: 16px;
+  background-color: #778899;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  @media screen and (min-width: 768px) {
+    width: 420px;
+  }
 `;
 
 export const Label = styled.label`
@@ -22,7 +33,7 @@ export const Label = styled.label`
 
 export const Input = styled.input`
   padding: 5px;
-  width: 300px;
+  font-size: 16px;
   border: 1px solid lightgrey;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
@@ -34,13 +45,10 @@ export const Input = styled.input`
     border: 1px solid #2f4f4f;
     transition: all 0.5s ease-out;
   }
-  @media screen and (min-width: 768px) {
-    width: 400px;
-  }
 `;
 
 export const Button = styled.button`
-  margin: 10px 0;
+  margin: 10px auto 5px auto;
   padding: 4px 6px;
   width: 150px;
   color: #2f4f4f;
@@ -61,7 +69,7 @@ export const Button = styled.button`
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
     width: 200px;
   }
 `;
