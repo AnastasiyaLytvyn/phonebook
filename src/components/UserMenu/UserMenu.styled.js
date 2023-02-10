@@ -10,9 +10,10 @@ export const Container = styled.div`
 `;
 
 export const Text = styled.p`
-  color: #2f4f4f;
+  color: #ffe4c4;
   font-size: 16px;
   font-weight: 500;
+  text-shadow: 1px 1px 1px white;
 
   @media screen and (min-width: 768px) {
     font-size: 22px;

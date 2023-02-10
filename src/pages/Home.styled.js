@@ -15,7 +15,7 @@ export const Container = styled.div`
 
 export const Text = styled.p`
   width: 150px;
-  color: #332e2e;
+  color: #ffebcd;
   font-size: 16px;
   font-weight: 400;
   text-shadow: 1px 1px 1px #2f4f4f;

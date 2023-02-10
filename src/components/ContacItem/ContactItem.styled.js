@@ -14,7 +14,7 @@ export const Item = styled.li`
 
   &:hover,
   &:focus {
-    color: #a9a9a9;
+    color: #ffe4c4;
   }
   @media screen and (min-width: 768px) {
     font-size: 18px;

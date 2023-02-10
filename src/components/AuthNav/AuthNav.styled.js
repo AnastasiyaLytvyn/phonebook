@@ -12,16 +12,15 @@ export const Container = styled.div`
 
 export const Link = styled(NavLink)`
   text-decoration: none;
-  color: #696969;
+  color: #d3d3d3;
   font-size: 16px;
   font-weight: 400;
-  text-shadow: 1px 1px 1px #808080;
+  text-shadow: 1px 1px 1px white;
   cursor: pointer;
   transition: all 0.5s ease-out;
 
-  &:hover,
-  &:focus {
-    color: #5f9ea0;
+  &:hover {
+    color: #808080;
   }
 
   @media screen and (min-width: 768px) {
