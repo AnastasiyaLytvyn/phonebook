@@ -13,7 +13,7 @@ export const Text = styled.p`
   color: #ffe4c4;
   font-size: 16px;
   font-weight: 500;
-  text-shadow: 1px 1px 1px white;
+  text-shadow: 0.5px 0px 0.5px white;
 
   @media screen and (min-width: 768px) {
     font-size: 22px;

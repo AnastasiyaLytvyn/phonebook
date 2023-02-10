@@ -15,12 +15,13 @@ export const Link = styled(NavLink)`
   color: #d3d3d3;
   font-size: 16px;
   font-weight: 400;
-  text-shadow: 1px 1px 1px white;
+  text-shadow: 0.5px 0px 0.5px white;
   cursor: pointer;
   transition: all 0.5s ease-out;
 
-  &:hover {
-    color: #808080;
+  &:hover,
+  &:focus {
+    color: #A9A9A9;
   }
 
   @media screen and (min-width: 768px) {
