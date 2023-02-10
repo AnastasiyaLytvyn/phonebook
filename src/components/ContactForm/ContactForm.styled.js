@@ -35,7 +35,7 @@ export const Input = styled.input`
     transition: all 0.5s ease-out;
   }
   @media screen and (min-width: 768px) {
-    width: 400px;
+    width: 410px;
   }
 `;
 

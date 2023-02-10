@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Item = styled.li`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 300px;
   font-size: 16px;
   color: #dcdcdc;
@@ -23,9 +24,7 @@ export const Item = styled.li`
 `;
 
 export const Button = styled.button`
-  padding: 4px 12px;
-  padding: 4px 6px;
-  width: 80px;
+  padding: 2px 12px;
   color: #2f4f4f;
   font-size: 14px;
   font-weight: 500;
@@ -45,6 +44,6 @@ export const Button = styled.button`
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
-    width: 100px;
+    padding: 3px 12px;
   }
 `;
