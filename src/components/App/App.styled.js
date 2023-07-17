@@ -4,13 +4,18 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(white, 0.1);
+  border: 1px solid rgba(white, 0.2);
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(black, 0.25);
+
+  position: relative;
+  transition: transform 250ms;
   margin: 32px auto 20px auto;
   padding: 15px;
   width: 320px;
-  background-color: #778899;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  border-radius: 10px;
+ 
 
   @media screen and (min-width: 768px) {
     width: 420px;

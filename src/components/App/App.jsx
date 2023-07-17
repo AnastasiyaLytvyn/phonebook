@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { Layout } from './Layout';
+import { Layout } from '../Layout/Layout';
 import { Home } from 'pages/Home';
 import { Register } from 'pages/Register';
 import { Login } from 'pages/Login';
 import { Contacts } from 'pages/Contacts';
-import { PrivateRoute } from './PrivateRoute';
-import { PublicRoute } from './PublicRoute';
+import { PrivateRoute } from '../PrivateRoute';
+import { PublicRoute } from '../PublicRoute';
 import { refreshUser } from 'redux/auth/operations';
 
 export function App() {

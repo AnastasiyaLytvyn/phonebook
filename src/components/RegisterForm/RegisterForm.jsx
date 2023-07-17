@@ -34,6 +34,7 @@ export const RegisterForm = () => {
     setEmail('');
     setPassword('');
   };
+  
   return (
     <Form autoComplete="off" onSubmit={handleSubmit}>
       <Label>

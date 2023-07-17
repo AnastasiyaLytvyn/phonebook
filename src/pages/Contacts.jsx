@@ -1,14 +1,14 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { selectIsLoading } from 'redux/contacts/selectors';
 import { fetchContacts } from 'redux/contacts/operations';
-import { Container } from "components/App.styled";
-import { TitlePhone } from "components/App.styled";
-import { TitleContacts } from "components/App.styled";
-import { ContactForm } from "components/ContactForm/ContactForm";
-import { Filter } from "components/Filter/Filter";
-import { ContactList } from "components/ContactList/ContactList";
-import { RotatingLines } from "react-loader-spinner";
+import { Container } from 'components/App/App.styled';
+import { TitlePhone } from 'components/App/App.styled';
+import { TitleContacts } from 'components/App/App.styled';
+import { ContactForm } from 'components/ContactForm/ContactForm';
+import { Filter } from 'components/Filter/Filter';
+import { ContactList } from 'components/ContactList/ContactList';
+import { RotatingLines } from 'react-loader-spinner';
 
 export const Contacts = () => {
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ export const Contacts = () => {
   }, [dispatch]);
 
   return (
-     <Container>
+    <Container>
       <TitlePhone>Phonebook</TitlePhone>
       <ContactForm />
       <TitleContacts>Contacts</TitleContacts>
@@ -35,6 +35,6 @@ export const Contacts = () => {
         />
       )}
       <ContactList />
-    </Container> 
-  )
+    </Container>
+  );
 };
